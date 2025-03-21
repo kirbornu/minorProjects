@@ -28,20 +28,7 @@ m - число дорог, n - число полос
 
 '''
 
-m, n = map(int, input().split())
-
-costs = [1] * (m + 1)
-costs[0] = 0
-
-for _ in range(n-1):
-    cpy = costs.copy()
-
-    for k in range(1, m + 1):
-        costs[k] = 0
-        for i in range(k):
-            costs[k] += cpy[i] + cpy[i+1]
-
-print(costs[-1])
+print("ляськи масяськи")
 
 # recursive way
 '''
